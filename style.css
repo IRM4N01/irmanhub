@@ -60,3 +60,18 @@ nav ul li {
   background-color: #333333;
   color: #ffffff;
 }
+
+/*Intro Section*/
+.intro {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #f1faee;
+}
+
+section {
+  padding: 2rem 1rem;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+}

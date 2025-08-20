@@ -38,3 +38,25 @@ nav ul li {
   padding: 5px 10px;
   cursor: pointer;
 }
+
+/* Dark mode styling */
+
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode header,
+.dark-mode nav {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.dark-mode a {
+  color: #bb86fc;
+}
+
+.dark-mode button#toggle-dark {
+  background-color: #333333;
+  color: #ffffff;
+}

@@ -75,3 +75,24 @@ section {
 section h2 {
   margin-bottom: 1rem;
 }
+
+/*Form section*/
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+form input, form textarea {
+  margin-bottom: 1 reml
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: #e63946;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+};

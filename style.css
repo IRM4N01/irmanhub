@@ -408,8 +408,19 @@ nav ul li a:hover {
   background: #9b5de5;
 }
 
+/*Contact Me Section*/
+.contact {
+  padding: 3rem 1rem;
+  background: #f1faee;
+  text-align: center;
+}
 
-/*Form section*/
+.contact h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/*Form Styling*/
 form {
   display: flex;
   flex-direction: column;
@@ -418,15 +429,15 @@ form {
 }
 
 form input, form textarea {
-  margin-bottom: 1 rem;
+  margin-bottom: 1rem;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 1rem;
 }
 
 form textarea {
-  min-height: 100px;
+  min-height: 120px;
   resize: vertical;
 }
 
@@ -434,9 +445,11 @@ form button {
   background: #e63946;
   color: white;
   border: none;
-  padding: 10px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 8px;
   transition: background 0.3s;
 }
 
@@ -449,4 +462,20 @@ form button:hover {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 1.5rem;
+}
+
+/* Dark-mode - Contact Me*/
+.dark-mode .contact {
+  background: #1e1e1e;
+}
+
+.dark-mode .contact h2 {
+  color: #fff;
+}
+
+.dark-mode form input,
+.dark-mode form textarea {
+  background: #121212;
+  border: 1px solide #333;
+  color: #fff;
 }

@@ -11,9 +11,9 @@
   <body>
     <!-- Navigation -->
     <header>
-      <nav class="container">
-        <h1>Irman Wibawa</h1>
-        <ul>
+      <nav class="navbar container">
+        <h1 class="logo">Irman Wibawa</h1>
+        <ul class ="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</li>
@@ -24,28 +24,61 @@
     </header>
 
     <main class="container">
-    <!-- Introduction Section -->
-     <section id="home" class="intro">
-      <h2>Hi, I'm Irman 👋</h2>
-      <p>Aspiring Sofware Engineer</p>
-      <p>a beginner software engineer diving into web development with HTML, CSS, and JavaScript. I enjoy experimenting with code, building small projects, and turning ideas into interactive experiences.</p>
+    <!-- Hero(Intro) Section -->
+     <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Irman Wibawa</h1>
+        <p class="role">Aspiring Sofware Engineer</p>
+        <p class ="tagline">Learning by building with HTML, CSS, and JavaScript one project at a time.</p>
+      </div>
      </section>
-     
+
      <!-- About Section // update information later-->
-      <section id="about">
-        <h2>About Me</h2>
-        <p>I’m currently learning software engineering. This is my first website project using HTML, CSS, and JavaScript!</p>
-        <button id="fun-fact-btn">Click for a Fun Fact</button>
-        <p id="fun-fact"></p>
+      <section id="about" class="about">
+        <div class="about-grid">
+          <div class="about-text">
+            <h2>About Me</h2>
+            <p>I come from a hospitality background, where I spent over seven years working in a fast-paced, customer-focused environment. While I valued the experience and skills I gained, I always felt the pull toward something more fulfilling — something that let me create, problem-solve, and build. I’ve always been fascinated by technology and software, curious about how things worked behind the screen and eager to learn how to build them myself.</p>
+            <p>After starting a family, I decided to take a leap of faith and pursue that long-standing passion. It hasn’t been a traditional path, but I’m now dedicated to learning software engineering and turning that curiosity into a career. With every project I build, I’m gaining not just technical skills in HTML, CSS, and JavaScript, but also the confidence that I can create meaningful, lasting work in this field.</p>
+          </div>
+
+          <div class="about-image">
+              <img src="C:\Users\irman\Downloads\1559353475185.jpg" alt="Irman Wibawa"> 
+
+              <!--Fun Fact Section-->
+              <div class="fun-fact-section">
+              <button id="fun-fact-btn">Click for a Fun Fact</button>
+              <p id="fun-fact"></p>
+              </div>
+          </div>
+        </div>
       </section>
 
      <!-- Projects Section - continue to add projects here -->
-      <section id="projects">
+      <section id="projects" class="projects">
         <h2>Projects</h2>
-        <ul>
-          <li>Personal Portfolio (This website!)</li>
-          <li>Future project placeholder</li>
-        </ul>
+        <div class="projects-grid">
+          <!--current project-->
+          <div class="project-card">
+            <h3>Personal Portfolio</h3>
+            <p>This website!</p>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+        
+        <!--Placeholder projects-->
+          <div class="project-card placeholder">
+            <h3>Coming Soon</h3>
+            <p>Stay tuned for my next project!</p>
+          </div>
+          <div class="project-card placeholder">
+            <h3>Coming Soon</h3>
+            <p>Stay tuned for my next project!</p>
+          </div>
+          <div class="project-card placeholder">
+            <h3>Coming Soon</h3>
+            <p>Stay tuned for my next project!</p>
+          </div>
+        </div>
       </section>
 
       <!-- Contact Section -->

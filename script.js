@@ -16,10 +16,11 @@ const factBtn = document.getElementById("fun-fact-btn");
 const factDisplay = document.getElementById("fun-fact");
 
 const facts = [
-    "fun fun fun fun",
-    "fact fact fact fact",
-    "put proper facts in later",
-    "software engineer"
+    "Committed to maintaining an active and healthy lifestyle through regular workouts",
+    "Enthusiast of MMA and other combat sports, continuously learning and honing techniques",
+    "Passionate about anime and manga, inspired by compelling stories, character and world-building",
+    "Dedicated RPG gamer, exploring immersive stories and strategic gameplay, and hoping to one day create my own game.",
+    "History enthusiast who enjoys uncovering and understanding events from the past"
 ];
 
 let lastFact = null;

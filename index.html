@@ -1,101 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
-    <title>Irman's Portfolio</title>
+    <title>Irman Wibawa — Portfolio</title>
   </head>
-
   <body>
     <!-- Navigation -->
     <header>
       <nav class="navbar container">
-        <h1 class="logo">Irman Wibawa</h1>
-        <ul class ="nav-links">
+        <h1 class="logo">IW</h1>
+        <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <button id="toggle-dark">Dark Mode</button>
+        <button id="toggle-dark">🌙 Dark</button>
       </nav>
     </header>
 
-    <main class="container">
-    <!-- Hero(Intro) Section -->
-     <section id="home" class="hero">
-      <div class="hero-content">
-        <h1>Irman Wibawa</h1>
-        <p class="role">Aspiring Software Engineer</p>
-        <p class ="tagline">Learning by building with HTML, CSS, and JavaScript one project at a time.</p>
-      </div>
-     </section>
-
-     <!-- About Section -->
-      <section id="about" class="about">
-        <div class="about-grid">
-          <div class="about-text">
-            <h2>About Me</h2>
-            <p>I come from a hospitality background, where I spent over seven years working in a fast-paced, customer-focused environment. While I valued the experience and skills I gained, I always felt the pull toward something more fulfilling - something that let me create, problem-solve, and build. I’ve always been fascinated by technology and software, curious about how things worked behind the screen and eager to learn how to build them myself.</p>
-            <p>After starting a family, I decided to take a leap of faith and pursue that long-standing passion. It hasn’t been a traditional path, but I’m now dedicated to learning software engineering and turning that curiosity into a career. With every project I build, I’m gaining not just technical skills in HTML, CSS, and JavaScript, but also the confidence that I can create meaningful, lasting work in this field.</p>
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Hi, I'm</p>
+          <h1>Irman Wibawa</h1>
+          <p class="role">Aspiring Software Engineer</p>
+          <p class="tagline"><span id="typed-text"></span><span class="cursor">|</span></p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">See My Work</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
           </div>
+        </div>
+        <div class="hero-scroll-hint">
+          <span>Scroll</span>
+          <div class="scroll-arrow"></div>
+        </div>
+      </section>
 
-          <div class="about-image">
-              <img src="images/Irman-profile-picture.jpg" alt="Irman Wibawa"> 
-
-              <!--Fun Facts-->
+      <!-- About Section -->
+      <section id="about" class="about section-pad reveal">
+        <div class="container">
+          <p class="section-label">Who I Am</p>
+          <div class="about-grid">
+            <div class="about-text">
+              <h2>About Me</h2>
+              <p>I come from a hospitality background, where I spent over seven years working in a fast-paced, customer-focused environment. While I valued the experience and skills I gained, I always felt the pull toward something more fulfilling — something that let me create, problem-solve, and build.</p>
+              <p>After starting a family, I decided to take a leap of faith and pursue that long-standing passion. With every project I build, I'm gaining technical skills in HTML, CSS, and JavaScript, and the confidence that I can create meaningful, lasting work in this field.</p>
+            </div>
+            <div class="about-image">
+              <img src="images/Portrait-Prof-Headshot.jpg" alt="Irman Wibawa">
               <div class="fun-fact-section">
-              <button id="fun-fact-btn">Click for a Fun Fact</button>
-              <p id="fun-fact"></p>
+                <button id="fun-fact-btn">⚡ Fun Fact</button>
+                <p id="fun-fact"></p>
               </div>
+            </div>
           </div>
         </div>
       </section>
 
-     <!-- Projects Section - continue to add projects here -->
-      <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-          <!--current project-->
-          <div class="project-card">
-            <h3>Personal Portfolio</h3>
-            <p>This website!</p>
-            <a href="#" class="project-link">View Project</a>
+      <!-- Skills Section -->
+      <section id="skills" class="skills section-pad reveal">
+        <div class="container">
+          <p class="section-label">What I Use</p>
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-pill">HTML5</div>
+            <div class="skill-pill">CSS3</div>
+            <div class="skill-pill">JavaScript</div>
+            <div class="skill-pill">Responsive Design</div>
+            <div class="skill-pill">Git</div>
+            <div class="skill-pill">Problem Solving</div>
+            <div class="skill-pill">DOM Manipulation</div>
+            <div class="skill-pill">Currently Learning →</div>
           </div>
-        
-        <!--Placeholder projects-->
-          <div class="project-card placeholder">
-            <h3>Coming Soon</h3>
-            <p>Stay tuned for my next project!</p>
-          </div>
-          <div class="project-card placeholder">
-            <h3>Coming Soon</h3>
-            <p>Stay tuned for my next project!</p>
-          </div>
-          <div class="project-card placeholder">
-            <h3>Coming Soon</h3>
-            <p>Stay tuned for my next project!</p>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects section-pad reveal">
+        <div class="container">
+          <p class="section-label">What I've Built</p>
+          <h2>Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-tag">Live</div>
+              <h3>Personal Portfolio</h3>
+              <p>This website — built from scratch with HTML, CSS, and JavaScript. Includes dark mode, animations, and form validation.</p>
+              <a href="#" class="project-link">View Project →</a>
+            </div>
+            <div class="project-card placeholder">
+              <div class="project-tag coming">Soon</div>
+              <h3>Coming Soon</h3>
+              <p>The next project is in the works. Stay tuned!</p>
+            </div>
+            <div class="project-card placeholder">
+              <div class="project-tag coming">Soon</div>
+              <h3>Coming Soon</h3>
+              <p>More builds on the way as I level up.</p>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Contact Section -->
-      <section id="contact" class="contact">
-        <div class="container">
+      <section id="contact" class="contact section-pad reveal">
+        <div class="container contact-inner">
+          <p class="section-label">Let's Talk</p>
           <h2>Contact Me</h2>
+          <p class="contact-sub">Have a question or want to work together? Drop me a message.</p>
           <form id="contact-form">
-            <input type="text" placeholder="Enter your name" required />
-            <input type="email" placeholder="Enter your email" required />
-            <textarea placeholder="Enter your message" required></textarea>
-            <button type="submit">Send</button>
+            <input type="text" placeholder="Your name" required />
+            <input type="email" placeholder="Your email" required />
+            <textarea placeholder="Your message" required></textarea>
+            <button type="submit">Send Message</button>
           </form>
         </div>
       </section>
     </main>
 
-   <script src="script.js"></script>  
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>Built by Irman Wibawa · 2025</p>
+        <div class="footer-links">
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
-  
 </html>

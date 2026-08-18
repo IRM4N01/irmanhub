@@ -1,27 +1,35 @@
-# Irman Wibawa - Portfolio Website
+# Irman Wibawa — Portfolio Website
 
-A personal portfolio website to showcase my journey as an aspiring software engineer. 
-Built with HTML, CSS, and JavaScript to highlight my skills, projects, and background.
+A personal portfolio website showcasing my journey as an aspiring software engineer.
+Built with HTML, CSS, and JavaScript — designed, written, and iterated from scratch.
 
-# Features: 
-- Responsive navigation bar with light/dark mode toggle
-- Hero section with introduction and tagline
+## Features
+- Sticky navigation with active section highlighting
+- Hero section with typewriter effect cycling through personal taglines
+- Scroll reveal animations on each section
 - About Me section with profile image and fun facts
-- Projects section with completed and upcoming projects
-- Contact form
+- Skills section with tech stack pills
+- Projects section featuring real, live projects
+- Contact form with validation
+- Light / Dark mode toggle
 
-# Built with:
-- HTML
-- CSS 
-- JavaScript
+## Built With
+- HTML5
+- CSS3 (custom properties, CSS variables, IntersectionObserver-driven animations)
+- JavaScript (vanilla, no frameworks)
+
+## Projects Featured
+- **Kaizen Arc** — Gym tracking PWA with offline support · [irm4n01.github.io/KaizenArc](https://irm4n01.github.io/KaizenArc/)
+- **ZZ Details** — Client website for a car detailing business · [zzdetails.netlify.app](https://zzdetails.netlify.app/)
+- **Personal Portfolio** — This site
 
 👉 [View Portfolio](https://irm4n01.github.io/irmanhub/)
 
-# Future Improvements
-- Add more projects with live links and screenshots
-- Improve form functionality to send emails directly
-- Add animations and transitions for a smoother experience
+## Future Improvements
+- Add more projects as they are completed
+- Connect contact form to an email service (e.g. EmailJS)
+- Add project screenshots and case study write-ups
 
-## Author:
+## Author
 **Irman Wibawa**
 Aspiring Software Engineer

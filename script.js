@@ -143,8 +143,10 @@ factBtn.addEventListener("click", () => {
 
 
 // =====================
-// CONTACT FORM VALIDATION
+// CONTACT FORM — EMAILJS
 // =====================
+emailjs.init("m5tXN85Jvl4hJqyPI");
+
 const form = document.getElementById("contact-form");
 
 form.addEventListener("submit", (e) => {
@@ -153,10 +155,36 @@ form.addEventListener("submit", (e) => {
   const oldMsg = form.parentNode.querySelector(".confirmation-msg");
   if (oldMsg) oldMsg.remove();
 
-  form.reset();
+  const submitBtn = form.querySelector("button[type='submit']");
+  submitBtn.textContent = "Sending...";
+  submitBtn.disabled = true;
 
-  const confirmation = document.createElement("p");
-  confirmation.textContent = "✅ Thanks for reaching out! I'll get back to you soon.";
-  confirmation.classList.add("confirmation-msg");
-  form.parentNode.appendChild(confirmation);
+  const formData = {
+    from_name: form.querySelector('input[type="text"]').value,
+    from_email: form.querySelector('input[type="email"]').value,
+    message: form.querySelector("textarea").value,
+  };
+
+  emailjs.send("service_hvj4igh", "template_qpuyj7g", formData)
+    .then(() => {
+      form.reset();
+      submitBtn.textContent = "Send Message";
+      submitBtn.disabled = false;
+
+      const confirmation = document.createElement("p");
+      confirmation.textContent = "✅ Thanks for reaching out! I'll get back to you soon.";
+      confirmation.classList.add("confirmation-msg");
+      form.parentNode.appendChild(confirmation);
+    })
+    .catch((error) => {
+      console.error("EmailJS error:", error);
+      submitBtn.textContent = "Send Message";
+      submitBtn.disabled = false;
+
+      const confirmation = document.createElement("p");
+      confirmation.textContent = "❌ Something went wrong. Please try again.";
+      confirmation.classList.add("confirmation-msg");
+      confirmation.style.color = "red";
+      form.parentNode.appendChild(confirmation);
+    });
 });

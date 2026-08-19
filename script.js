@@ -111,37 +111,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-
-// =====================
-// FUN FACT BUTTON
-// =====================
-const factBtn = document.getElementById("fun-fact-btn");
-const factDisplay = document.getElementById("fun-fact");
-const facts = [
-  "Gym time is my happy hour — fitness keeps me energised.",
-  "MMA and combat sports enthusiast.",
-  "Passionate about anime and manga.",
-  "Dedicated RPG gamer, aspiring game creator.",
-  "History enthusiast — love learning what came before.",
-];
-
-let lastFact = null;
-
-factBtn.addEventListener("click", () => {
-  let randomFact;
-  do {
-    randomFact = facts[Math.floor(Math.random() * facts.length)];
-  } while (randomFact === lastFact && facts.length > 1);
-
-  factDisplay.style.opacity = "0";
-  setTimeout(() => {
-    factDisplay.textContent = randomFact;
-    factDisplay.style.opacity = "1";
-  }, 200);
-  lastFact = randomFact;
-});
-
-
 // =====================
 // CONTACT FORM — EMAILJS
 // =====================

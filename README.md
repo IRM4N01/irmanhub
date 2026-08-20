@@ -7,7 +7,7 @@ Built with HTML, CSS, and JavaScript — designed, written, and iterated from sc
 - Sticky navigation with active section highlighting
 - Hero section with typewriter effect cycling through personal taglines
 - Scroll reveal animations on each section
-- About Me section with profile image and fun facts
+- About Me section with profile image 
 - Skills section with tech stack pills
 - Projects section featuring real, live projects
 - Contact form with validation
